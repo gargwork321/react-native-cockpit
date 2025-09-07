@@ -1,12 +1,14 @@
-import { Animated, StyleSheet } from 'react-native';
-
+import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
-  container: { flex: 1, alignItems: 'center', justifyContent: 'center' },
-  text: { fontSize: 18 },
+  fabTouchable: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   fab: {
     position: 'absolute',
-    left: 20,
-    top: 100,
+    right: 20,
+    top: 150,
     backgroundColor: '#222',
     borderRadius: 30,
     width: 60,
@@ -18,17 +20,68 @@ export const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.3,
     shadowRadius: 2,
+    zIndex: 100,
   },
   fabText: {
     color: '#fff',
     fontWeight: 'bold',
     fontSize: 18,
   },
+  overlay: {
+    flex: 1,
+    backgroundColor: 'rgba(0,0,0,0.55)',
+    justifyContent: 'flex-end',
+  },
+  panel: {
+    width: '100%',
+    height: '85%',
+    backgroundColor: '#ffffffff',
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: -2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 8,
+    elevation: 10,
+    paddingTop: 32,
+    zIndex: 200,
+    overflow: 'hidden',
+  },
+  closeButton: {
+    position: 'absolute',
+    top: 12,
+    right: 16,
+    zIndex: 201,
+    width: 32,
+    height: 32,
+    borderRadius: 16,
+    backgroundColor: '#eee',
+    alignItems: 'center',
+    justifyContent: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.1,
+    shadowRadius: 2,
+  },
+  closeButtonText: {
+    fontSize: 22,
+    color: '#333',
+    fontWeight: 'bold',
+    lineHeight: 28,
+  },
+  bottomInfo: {
+    position: 'absolute',
+    zIndex: 201,
+    left: 0,
+    right: 0,
+    bottom: 120,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    borderTopWidth: 1,
+    borderBottomWidth: 1,
+    borderColor: '#ddd',
+  },
+  infotext: { color: '#666', fontSize: 13 },
 });
-
-export const getMovementStyle = (pan: Animated.ValueXY, dragging: boolean) => ({
-  transform: pan.getTranslateTransform(),
-  opacity: dragging ? 0.7 : 1,
-});
-
-export type Styles = typeof styles;

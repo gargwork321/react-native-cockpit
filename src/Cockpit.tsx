@@ -1,6 +1,6 @@
 // src/index.tsx
 
-import { DraggableFAB } from './components/DraggableFAB/DraggableFAB';
+import { DraggableFAB } from './components/DraggableFAB';
 
 export const Cockpit = () => {
   return <DraggableFAB />;
