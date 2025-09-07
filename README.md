@@ -1,37 +1,18 @@
-# react-native-cockpit
+# React Native Cockpit 🛩️
 
 A floating in-app developer & QA panel for React Native. Inspect, debug, and simulate without ever leaving your app.
 
+## Features
+
+*   **📊 App & Device Info:** View version, environment, device stats at a glance.
+*   **📝 Live Log Stream:** See `console.log` messages in real-time, right on the device.
+*   **🌐 Network Inspector:** Monitor API requests and responses.
+*   **🎛️ Quick Actions:** Clear cache, restart app, reset navigation with one tap.
+*   **🧪 Advanced Simulation:** Trigger deep links, crash reports, and switch users on the fly.
+
 ## Installation
 
-
-```sh
+```bash
 npm install react-native-cockpit
-```
-
-
-## Usage
-
-
-```js
-import { multiply } from 'react-native-cockpit';
-
-// ...
-
-const result = multiply(3, 7);
-```
-
-
-## Contributing
-
-- [Development workflow](CONTRIBUTING.md#development-workflow)
-- [Sending a pull request](CONTRIBUTING.md#sending-a-pull-request)
-- [Code of conduct](CODE_OF_CONDUCT.md)
-
-## License
-
-MIT
-
----
-
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
+# or
+yarn add react-native-cockpit
