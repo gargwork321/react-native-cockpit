@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   root: {
-    flex: 1,
+    height: '78%',
   },
   tabMenu: {
     flexDirection: 'row',

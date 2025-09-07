@@ -82,6 +82,7 @@ export const styles = StyleSheet.create({
     borderTopWidth: 1,
     borderBottomWidth: 1,
     borderColor: '#ddd',
+    backgroundColor: '#f9f9f9',
   },
   infotext: { color: '#666', fontSize: 13 },
 });
