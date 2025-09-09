@@ -32,14 +32,8 @@ export const DraggableFAB = () => {
 
   return (
     <>
-      {/* Boss FAB Button */}
-      <Modal
-        visible={showFab}
-        transparent
-        animationType="none"
-        hardwareAccelerated
-        statusBarTranslucent={Platform.OS === 'android'}
-      >
+      {/* Boss FAB Button (not in Modal) */}
+      {showFab && (
         <Animated.View
           style={[
             styles.fab,
@@ -54,6 +48,7 @@ export const DraggableFAB = () => {
               ],
             },
           ]}
+          pointerEvents="box-none"
         >
           <TouchableOpacity
             style={styles.fabTouchable}
@@ -63,7 +58,7 @@ export const DraggableFAB = () => {
             <Text style={styles.fabText}>Boss</Text>
           </TouchableOpacity>
         </Animated.View>
-      </Modal>
+      )}
 
       {/* Sliding Panel */}
       <Modal
