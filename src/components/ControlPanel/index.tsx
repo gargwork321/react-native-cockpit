@@ -44,7 +44,9 @@ export const ControlPanel = () => {
       >
         {activeTab === 0 && <OverviewTab />}
         {activeTab === 1 && <ConsolLogs />}
-        {activeTab === 2 && <Text>Tab 3 Content</Text>}
+        {activeTab === 2 && <Text>Coming Soon</Text>}
+        {activeTab === 3 && <Text>Coming Soon</Text>}
+        {activeTab === 4 && <Text>Coming Soon</Text>}
       </ScrollView>
     </View>
   );
