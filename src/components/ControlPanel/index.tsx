@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { View, Text, TouchableOpacity, ScrollView } from 'react-native';
 import { styles } from './ControlPanel.styles';
 import OverviewTab from '../OverviewTab';
+import ConsolLogs from '../ConsolLogs';
 
 const TAB_LABELS = ['Overview', 'Logs', 'Flags', 'State', 'Tools'];
 
@@ -42,7 +43,7 @@ export const ControlPanel = () => {
         contentContainerStyle={styles.tabContentContainer}
       >
         {activeTab === 0 && <OverviewTab />}
-        {activeTab === 1 && <Text>Tab 2 Content</Text>}
+        {activeTab === 1 && <ConsolLogs />}
         {activeTab === 2 && <Text>Tab 3 Content</Text>}
       </ScrollView>
     </View>

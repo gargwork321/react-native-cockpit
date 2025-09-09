@@ -35,7 +35,6 @@ export const styles = StyleSheet.create({
   },
   tabContent: {
     flex: 1,
-    padding: 20,
   },
   tabContentContainer: {
     flexGrow: 1,
