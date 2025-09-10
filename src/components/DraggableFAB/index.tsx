@@ -55,7 +55,7 @@ export const DraggableFAB = () => {
             activeOpacity={0.7}
             onPress={openPanel}
           >
-            <Text style={styles.fabText}>Boss</Text>
+            <Text style={styles.fabText}>Pilot</Text>
           </TouchableOpacity>
         </Animated.View>
       )}
