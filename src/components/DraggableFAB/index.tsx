@@ -11,6 +11,7 @@ import {
 import { styles } from './DraggableFAB.styles';
 import { openPanelHelper, closePanelHelper } from './DraggableFAB.utils';
 import CockpitPanel from '../ControlPanel';
+import useDeviceInfo from '../../hooks/useDeviceInfo';
 
 export const DraggableFAB = () => {
   const [showPanel, setShowPanel] = useState(false);
@@ -19,6 +20,7 @@ export const DraggableFAB = () => {
   const panelSlideAnim = useRef(
     new Animated.Value(Dimensions.get('window').height)
   ).current;
+  const { appVersion, buildNumber } = useDeviceInfo();
 
   const openPanel = () =>
     openPanelHelper({ fabSlideAnim, setShowFab, setShowPanel, panelSlideAnim });
@@ -81,8 +83,9 @@ export const DraggableFAB = () => {
           </TouchableOpacity>
           <CockpitPanel />
           <View style={styles.bottomInfo}>
-            <Text style={styles.infotext}>Environment: prod</Text>
-            <Text style={styles.infotext}>App: v1.0.0 (build 123)</Text>
+            <Text style={styles.infotext}>
+              App: v{appVersion} (build {buildNumber})
+            </Text>
           </View>
         </Animated.View>
       </Modal>
