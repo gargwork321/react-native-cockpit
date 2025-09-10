@@ -22,7 +22,7 @@ export interface DeviceInfo {
 }
 export interface Spec extends TurboModule {
   getDeviceInfo(): Promise<DeviceInfo>;
-  multiply(a: number, b: number): number;
+  multiply(a: number, b: number): Promise<number>;
 }
 
 export default TurboModuleRegistry.getEnforcing<Spec>('Cockpit');

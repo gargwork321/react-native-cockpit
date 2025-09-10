@@ -39,4 +39,9 @@ export const styles = StyleSheet.create({
   tabContentContainer: {
     flexGrow: 1,
   },
+  comingSoonView: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
 });

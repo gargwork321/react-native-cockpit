@@ -4,7 +4,9 @@
 @implementation Cockpit
 RCT_EXPORT_MODULE()
 
-- (void)getDeviceInfo:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject {
+RCT_EXPORT_METHOD(getDeviceInfo:(RCTPromiseResolveBlock)resolve
+                  reject:(RCTPromiseRejectBlock)reject)
+{
     UIDevice *device = [UIDevice currentDevice];
     BOOL isTablet = [device userInterfaceIdiom] == UIUserInterfaceIdiomPad;
     #if TARGET_OS_SIMULATOR
@@ -46,10 +48,12 @@ RCT_EXPORT_MODULE()
     resolve(info);
 }
 
-- (NSNumber *)multiply:(double)a b:(double)b {
+RCT_EXPORT_METHOD(multiply:(double)a withB:(double)b
+                 resolve:(RCTPromiseResolveBlock)resolve
+                 reject:(RCTPromiseRejectBlock)reject)
+{
     NSNumber *result = @(a * b);
-
-    return result;
+    resolve(result);
 }
 
 - (std::shared_ptr<facebook::react::TurboModule>)getTurboModule:

@@ -3200,12 +3200,12 @@ __metadata:
   linkType: hard
 
 "@react-native/eslint-config@npm:^0.81.1":
-  version: 0.81.3
-  resolution: "@react-native/eslint-config@npm:0.81.3"
+  version: 0.81.4
+  resolution: "@react-native/eslint-config@npm:0.81.4"
   dependencies:
     "@babel/core": ^7.25.2
     "@babel/eslint-parser": ^7.25.1
-    "@react-native/eslint-plugin": 0.81.3
+    "@react-native/eslint-plugin": 0.81.4
     "@typescript-eslint/eslint-plugin": ^7.1.1
     "@typescript-eslint/parser": ^7.1.1
     eslint-config-prettier: ^8.5.0
@@ -3218,14 +3218,14 @@ __metadata:
   peerDependencies:
     eslint: ">=8"
     prettier: ">=2"
-  checksum: 8e8a9e7b68a66a90f07f40b57178d3d5f4660b3137927bfff38b10b2ff26e624e3a8cfd3784affd1278eed0aff7b783ef28b97b1a51d0cf3d426273352eeb120
+  checksum: e601fe1298710557916a0ab3c32975ab0e65319c78edaca7369eded6eea4f94ab4a00c1eafd437f93a82baa93cdfbd2a930ceb1b82b4a2e92f51d490184dd1b1
   languageName: node
   linkType: hard
 
-"@react-native/eslint-plugin@npm:0.81.3":
-  version: 0.81.3
-  resolution: "@react-native/eslint-plugin@npm:0.81.3"
-  checksum: 10cd1b8cc178c97d0e7c1ab37731b6c71f3d942b6def19cacb55142192164efeff56b1ad5b24ebad421bde7c6bcd209d34275ec3b13ecef7fa92d8e50a649014
+"@react-native/eslint-plugin@npm:0.81.4":
+  version: 0.81.4
+  resolution: "@react-native/eslint-plugin@npm:0.81.4"
+  checksum: e9c3ada247dfa410ae5f0ed20fb12ec79193a1140ec643d2cf822d472f7951e51247b4b235924faef0763efed73432dcfb203fd4af3c7abd8ccc10442efa6c31
   languageName: node
   linkType: hard
 
@@ -10486,8 +10486,8 @@ __metadata:
   linkType: hard
 
 "regexpu-core@npm:^6.2.0":
-  version: 6.3.0
-  resolution: "regexpu-core@npm:6.3.0"
+  version: 6.3.1
+  resolution: "regexpu-core@npm:6.3.1"
   dependencies:
     regenerate: ^1.4.2
     regenerate-unicode-properties: ^10.2.2
@@ -10495,7 +10495,7 @@ __metadata:
     regjsparser: ^0.12.0
     unicode-match-property-ecmascript: ^2.0.0
     unicode-match-property-value-ecmascript: ^2.2.1
-  checksum: d9845490f1a4db36b8bf560d291bfaf1d1906e8f9d48dcf85b12603f6c48bdc92cd8e11e8c95e77c23e04c14a39c4f2300477b82bc53b8471c79d900f96477b3
+  checksum: 601a8298bca4d074c239e3b989b3b5f7532e4c8bde4e6d45690d4ba01d4f331869df3899a260a0fd88ecdb8902082725845447b0e2a3e1b0a1364131970489cb
   languageName: node
   linkType: hard
 

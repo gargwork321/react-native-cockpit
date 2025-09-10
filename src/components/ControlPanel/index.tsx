@@ -41,9 +41,21 @@ export const ControlPanel = () => {
       <View style={styles.tabContent}>
         {activeTab === 0 && <OverviewTab />}
         {activeTab === 1 && <ConsolLogs />}
-        {activeTab === 2 && <Text>Coming Soon</Text>}
-        {activeTab === 3 && <Text>Coming Soon</Text>}
-        {activeTab === 4 && <Text>Coming Soon</Text>}
+        {activeTab === 2 && (
+          <View style={styles.comingSoonView}>
+            <Text>Coming Soon</Text>
+          </View>
+        )}
+        {activeTab === 3 && (
+          <View style={styles.comingSoonView}>
+            <Text>Coming Soon</Text>
+          </View>
+        )}
+        {activeTab === 4 && (
+          <View style={styles.comingSoonView}>
+            <Text>Coming Soon</Text>
+          </View>
+        )}
       </View>
     </View>
   );

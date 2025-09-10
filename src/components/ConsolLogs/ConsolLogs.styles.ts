@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
     marginBottom: 8,
     flex: 1,
     marginRight: 10,
+    minHeight: 40,
   },
   clearBtn: {
     color: '#dc322f',
