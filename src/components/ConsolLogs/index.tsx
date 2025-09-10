@@ -8,6 +8,8 @@ import {
 } from 'react-native';
 import styles from './ConsolLogs.styles';
 import { useLogs, type LogEntry } from './LogContext';
+import Icon from '../../components/Icon';
+import { IconName } from '../../utils/icons';
 
 const LOG_COLORS: Record<string, string> = {
   log: '#222',
@@ -32,7 +34,7 @@ const ConsolLogs: React.FC = () => {
           onChangeText={setSearch}
         />
         <TouchableOpacity onPress={clearLogs}>
-          <Text style={styles.clearBtn}>X</Text>
+          <Icon name={IconName.Dustbin} size={25} color="#c00e0eff" />
         </TouchableOpacity>
       </View>
 

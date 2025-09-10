@@ -12,6 +12,8 @@ import { styles } from './DraggableFAB.styles';
 import { openPanelHelper, closePanelHelper } from './DraggableFAB.utils';
 import CockpitPanel from '../ControlPanel';
 import useDeviceInfo from '../../hooks/useDeviceInfo';
+import Icon from '../../components/Icon';
+import { IconName } from '../../utils/icons';
 
 export const DraggableFAB = () => {
   const [showPanel, setShowPanel] = useState(false);
@@ -57,7 +59,7 @@ export const DraggableFAB = () => {
             activeOpacity={0.7}
             onPress={openPanel}
           >
-            <Text style={styles.fabText}>Pilot</Text>
+            <Icon name={IconName.Shuttle} size={30} color="#fff" />
           </TouchableOpacity>
         </Animated.View>
       )}
@@ -79,7 +81,7 @@ export const DraggableFAB = () => {
           ]}
         >
           <TouchableOpacity style={styles.closeButton} onPress={closePanel}>
-            <Text style={styles.closeButtonText}>×</Text>
+            <Icon name={IconName.Close} size={20} color="#595959ff" />
           </TouchableOpacity>
           <CockpitPanel />
           <View style={styles.bottomInfo}>
