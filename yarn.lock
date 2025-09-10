@@ -1733,13 +1733,13 @@ __metadata:
   linkType: hard
 
 "@eslint-community/eslint-utils@npm:^4.2.0, @eslint-community/eslint-utils@npm:^4.4.0, @eslint-community/eslint-utils@npm:^4.8.0":
-  version: 4.8.0
-  resolution: "@eslint-community/eslint-utils@npm:4.8.0"
+  version: 4.9.0
+  resolution: "@eslint-community/eslint-utils@npm:4.9.0"
   dependencies:
     eslint-visitor-keys: ^3.4.3
   peerDependencies:
     eslint: ^6.0.0 || ^7.0.0 || >=8.0.0
-  checksum: f221167d24166345521b8d361f1e612f6ac655e0706060cebb8698f2c31a90bee2ba972fed3b714e61189530d9d9ea7cef1d5d6102c0c4eb0eab4c7b9948753d
+  checksum: ae9b98eea006d1354368804b0116b8b45017a4e47b486d1b9cfa048a8ed3dc69b9b074eb2b2acb14034e6897c24048fd42b6a6816d9dc8bb9daad79db7d478d2
   languageName: node
   linkType: hard
 
@@ -1831,11 +1831,11 @@ __metadata:
   linkType: hard
 
 "@evilmartians/lefthook@npm:^1.12.3":
-  version: 1.12.3
-  resolution: "@evilmartians/lefthook@npm:1.12.3"
+  version: 1.12.4
+  resolution: "@evilmartians/lefthook@npm:1.12.4"
   bin:
     lefthook: bin/index.js
-  checksum: 00488ba640ed84fb28d6e988453c1e40a487b4c2463f7912e22f5b0bf0190c01e2aca19759e3938398d418efc59efcef702fc5e9747015ee43f974c67d3d0363
+  checksum: fffb6bac7701d4fde6c38f59ccc5a0b4cb04173d8506aabaee5823a47d96154d3fe996f46506ef16040fb88626ff0bce46d1dfa7bcb53e14c2a8a13862561500
   conditions: (os=darwin | os=linux | os=win32) & (cpu=x64 | cpu=arm64 | cpu=ia32)
   languageName: node
   linkType: hard
@@ -3200,12 +3200,12 @@ __metadata:
   linkType: hard
 
 "@react-native/eslint-config@npm:^0.81.1":
-  version: 0.81.1
-  resolution: "@react-native/eslint-config@npm:0.81.1"
+  version: 0.81.3
+  resolution: "@react-native/eslint-config@npm:0.81.3"
   dependencies:
     "@babel/core": ^7.25.2
     "@babel/eslint-parser": ^7.25.1
-    "@react-native/eslint-plugin": 0.81.1
+    "@react-native/eslint-plugin": 0.81.3
     "@typescript-eslint/eslint-plugin": ^7.1.1
     "@typescript-eslint/parser": ^7.1.1
     eslint-config-prettier: ^8.5.0
@@ -3218,14 +3218,14 @@ __metadata:
   peerDependencies:
     eslint: ">=8"
     prettier: ">=2"
-  checksum: 323e2b1d94a8c4f2c41b39a8dca1c86b8614f50e6be935de9444dc559f983c24044f8299612c9e81fb90a145ac5102d8aded4f5c502f600738ed29ead18af6f8
+  checksum: 8e8a9e7b68a66a90f07f40b57178d3d5f4660b3137927bfff38b10b2ff26e624e3a8cfd3784affd1278eed0aff7b783ef28b97b1a51d0cf3d426273352eeb120
   languageName: node
   linkType: hard
 
-"@react-native/eslint-plugin@npm:0.81.1":
-  version: 0.81.1
-  resolution: "@react-native/eslint-plugin@npm:0.81.1"
-  checksum: 93ea7faa3268d823cac59db10d31d97a50529767d1abc49b0235b0f050bb1031233c70b17c21f9f78c76e5a2623bf4c106c4b73d7d6893ce6f3b57662dc888aa
+"@react-native/eslint-plugin@npm:0.81.3":
+  version: 0.81.3
+  resolution: "@react-native/eslint-plugin@npm:0.81.3"
+  checksum: 10cd1b8cc178c97d0e7c1ab37731b6c71f3d942b6def19cacb55142192164efeff56b1ad5b24ebad421bde7c6bcd209d34275ec3b13ecef7fa92d8e50a649014
   languageName: node
   linkType: hard
 
@@ -3895,9 +3895,9 @@ __metadata:
   linkType: hard
 
 "ansi-regex@npm:^6.0.1":
-  version: 6.2.0
-  resolution: "ansi-regex@npm:6.2.0"
-  checksum: f1a540a85647187f21918a87ea3fc910adc6ecc2bfc180c22d9b01a04379dce3a6c1f2e5375ab78e8d7d589eb1aeb734f49171e262e90c4225f21b4415c08c8c
+  version: 6.2.2
+  resolution: "ansi-regex@npm:6.2.2"
+  checksum: 9b17ce2c6daecc75bcd5966b9ad672c23b184dc3ed9bf3c98a0702f0d2f736c15c10d461913568f2cf527a5e64291c7473358885dd493305c84a1cfed66ba94f
   languageName: node
   linkType: hard
 
@@ -3927,9 +3927,9 @@ __metadata:
   linkType: hard
 
 "ansi-styles@npm:^6.1.0":
-  version: 6.2.1
-  resolution: "ansi-styles@npm:6.2.1"
-  checksum: ef940f2f0ced1a6347398da88a91da7930c33ecac3c77b72c5905f8b8fe402c52e6fde304ff5347f616e27a742da3f1dc76de98f6866c69251ad0b07a66776d9
+  version: 6.2.3
+  resolution: "ansi-styles@npm:6.2.3"
+  checksum: f1b0829cf048cce870a305819f65ce2adcebc097b6d6479e12e955fd6225df9b9eb8b497083b764df796d94383ff20016cc4dbbae5b40f36138fb65a9d33c2e2
   languageName: node
   linkType: hard
 
@@ -4563,9 +4563,9 @@ __metadata:
   linkType: hard
 
 "chalk@npm:^5.3.0":
-  version: 5.6.0
-  resolution: "chalk@npm:5.6.0"
-  checksum: 245d4b53c29c88da9e291f318c86b6b3ee65aa81568f9e10fafc984a6ef520412dee513057d07cc0f4614ab5a46cb07a0394fab3794d88d48c89c17b2d8fbf7f
+  version: 5.6.2
+  resolution: "chalk@npm:5.6.2"
+  checksum: 4ee2d47a626d79ca27cb5299ecdcce840ef5755e287412536522344db0fc51ca0f6d6433202332c29e2288c6a90a2b31f3bd626bc8c14743b6b6ee28abd3b796
   languageName: node
   linkType: hard
 
@@ -5522,9 +5522,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.211":
-  version: 1.5.214
-  resolution: "electron-to-chromium@npm:1.5.214"
-  checksum: e996a9f94ab7599489069aef4ddf1098d4c43871998ff80d4e388b927eaf7593bdb3dfcc4fda5d33ffd2f48b28f19f8aa73bca784da277091112c1b50e3b8128
+  version: 1.5.215
+  resolution: "electron-to-chromium@npm:1.5.215"
+  checksum: bb9cc85f51334fa9ae7ba3c2c77739616004c924e9282e955f39d90025ec40994fba9fd8d0128004e23fdfecdbe89cf9e04a1199c11c65c0213b1e090aa8c290
   languageName: node
   linkType: hard
 
@@ -6554,9 +6554,9 @@ __metadata:
   linkType: hard
 
 "get-east-asian-width@npm:^1.0.0":
-  version: 1.3.1
-  resolution: "get-east-asian-width@npm:1.3.1"
-  checksum: a65927415e0690dda1f790f075566aa02bf81d649ddfed6e85585f228c89e6bf8a9e6582c06e120597a632b40b18db2f7cef7424073bad931d713e71fd5ede27
+  version: 1.4.0
+  resolution: "get-east-asian-width@npm:1.4.0"
+  checksum: 1d9a81a8004f4217ebef5d461875047d269e4b57e039558fd65130877cd4da8e3f61e1c4eada0c8b10e2816c7baf7d5fddb7006f561da13bc6f6dd19c1e964a4
   languageName: node
   linkType: hard
 
@@ -10288,7 +10288,6 @@ __metadata:
     react: 19.1.0
     react-native: 0.81.1
     react-native-builder-bob: ^0.40.13
-    react-native-device-info: ^14.0.4
     release-it: ^19.0.4
     turbo: ^2.5.6
     typescript: ^5.9.2
@@ -10449,12 +10448,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"regenerate-unicode-properties@npm:^10.2.0":
-  version: 10.2.0
-  resolution: "regenerate-unicode-properties@npm:10.2.0"
+"regenerate-unicode-properties@npm:^10.2.2":
+  version: 10.2.2
+  resolution: "regenerate-unicode-properties@npm:10.2.2"
   dependencies:
     regenerate: ^1.4.2
-  checksum: d5c5fc13f8b8d7e16e791637a4bfef741f8d70e267d51845ee7d5404a32fa14c75b181c4efba33e4bff8b0000a2f13e9773593713dfe5b66597df4259275ce63
+  checksum: 7ae4c1c32460c4360e3118c45eec0621424908f430fdd6f162c9172067786bf2b1682fbc885a33b26bc85e76e06f4d3f398b52425e801b0bb0cbae147dafb0b2
   languageName: node
   linkType: hard
 
@@ -10487,16 +10486,16 @@ __metadata:
   linkType: hard
 
 "regexpu-core@npm:^6.2.0":
-  version: 6.2.0
-  resolution: "regexpu-core@npm:6.2.0"
+  version: 6.3.0
+  resolution: "regexpu-core@npm:6.3.0"
   dependencies:
     regenerate: ^1.4.2
-    regenerate-unicode-properties: ^10.2.0
+    regenerate-unicode-properties: ^10.2.2
     regjsgen: ^0.8.0
     regjsparser: ^0.12.0
     unicode-match-property-ecmascript: ^2.0.0
-    unicode-match-property-value-ecmascript: ^2.1.0
-  checksum: 67d3c4a3f6c99bc80b5d690074a27e6f675be1c1739f8a9acf028fbc36f1a468472574ea65e331e217995198ba4404d7878f3cb3739a73552dd3c70d3fb7f8e6
+    unicode-match-property-value-ecmascript: ^2.2.1
+  checksum: d9845490f1a4db36b8bf560d291bfaf1d1906e8f9d48dcf85b12603f6c48bdc92cd8e11e8c95e77c23e04c14a39c4f2300477b82bc53b8471c79d900f96477b3
   languageName: node
   linkType: hard
 
@@ -10714,9 +10713,9 @@ __metadata:
   linkType: hard
 
 "run-applescript@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "run-applescript@npm:7.0.0"
-  checksum: b02462454d8b182ad4117e5d4626e9e6782eb2072925c9fac582170b0627ae3c1ea92ee9b2df7daf84b5e9ffe14eb1cf5fb70bc44b15c8a0bfcdb47987e2410c
+  version: 7.1.0
+  resolution: "run-applescript@npm:7.1.0"
+  checksum: 8659fb5f2717b2b37a68cbfe5f678254cf24b5a82a6df3372b180c80c7c137dcd757a4166c3887e459f59a090ca414e8ea7ca97cf3ee5123db54b3b4006d7b7a
   languageName: node
   linkType: hard
 
@@ -11348,11 +11347,11 @@ __metadata:
   linkType: hard
 
 "strip-ansi@npm:^7.0.1, strip-ansi@npm:^7.1.0":
-  version: 7.1.0
-  resolution: "strip-ansi@npm:7.1.0"
+  version: 7.1.2
+  resolution: "strip-ansi@npm:7.1.2"
   dependencies:
     ansi-regex: ^6.0.1
-  checksum: 859c73fcf27869c22a4e4d8c6acfe690064659e84bef9458aa6d13719d09ca88dcfd40cbf31fd0be63518ea1a643fe070b4827d353e09533a5b0b9fd4553d64d
+  checksum: db0e3f9654e519c8a33c50fc9304d07df5649388e7da06d3aabf66d29e5ad65d5e6315d8519d409c15b32fa82c1df7e11ed6f8cd50b0e4404463f0c9d77c8d0b
   languageName: node
   linkType: hard
 
@@ -11833,10 +11832,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unicode-match-property-value-ecmascript@npm:^2.1.0":
-  version: 2.2.0
-  resolution: "unicode-match-property-value-ecmascript@npm:2.2.0"
-  checksum: 9e3151e1d0bc6be35c4cef105e317c04090364173e8462005b5cde08a1e7c858b6586486cfebac39dc2c6c8c9ee24afb245de6d527604866edfa454fe2a35fae
+"unicode-match-property-value-ecmascript@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "unicode-match-property-value-ecmascript@npm:2.2.1"
+  checksum: e6c73e07bb4dc4aa399797a14b170e84a30ed290bcf97cc4305cf67dde8744119721ce17cef03f4f9d4ff48654bfa26eadc7fe1e8dd4b71b8f3b2e9a9742f013
   languageName: node
   linkType: hard
 

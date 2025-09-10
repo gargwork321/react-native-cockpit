@@ -25,17 +25,17 @@ const ConsolLogs: React.FC = () => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.title}>Console Logs</Text>
+        <TextInput
+          style={styles.search}
+          placeholder="Search logs..."
+          value={search}
+          onChangeText={setSearch}
+        />
         <TouchableOpacity onPress={clearLogs}>
-          <Text style={styles.clearBtn}>Clear</Text>
+          <Text style={styles.clearBtn}>X</Text>
         </TouchableOpacity>
       </View>
-      <TextInput
-        style={styles.search}
-        placeholder="Search logs..."
-        value={search}
-        onChangeText={setSearch}
-      />
+
       <ScrollView style={styles.logs}>
         {filteredLogs.length === 0 ? (
           <Text style={styles.empty}>No logs found.</Text>
@@ -43,7 +43,7 @@ const ConsolLogs: React.FC = () => {
           filteredLogs.map((log: LogEntry, idx: number) => (
             <Text
               key={idx}
-              style={{ color: LOG_COLORS[log.type], marginBottom: 4 }}
+              style={[{ color: LOG_COLORS[log.type] }, styles.logLineSpacing]}
             >
               [{log.timestamp}] {log.type.toUpperCase()}: {log.message}
             </Text>

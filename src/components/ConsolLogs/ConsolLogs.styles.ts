@@ -2,6 +2,7 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     backgroundColor: '#ffffffff',
     padding: 10,
   },
@@ -9,24 +10,21 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: 8,
-    marginRight: 5,
-  },
-  title: {
-    fontWeight: 'bold',
-    fontSize: 16,
-  },
-  clearBtn: {
-    color: '#dc322f',
-    fontWeight: 'bold',
-    fontSize: 14,
+    paddingHorizontal: 5,
   },
   search: {
     borderWidth: 1,
     borderColor: '#ccc',
     borderRadius: 8,
-    padding: 6,
     marginBottom: 8,
+    flex: 1,
+    marginRight: 10,
+  },
+  clearBtn: {
+    color: '#dc322f',
+    fontWeight: 'bold',
+    fontSize: 20,
+    paddingHorizontal: 8,
   },
   logs: {
     flex: 1,
@@ -35,6 +33,9 @@ const styles = StyleSheet.create({
     color: '#888',
     textAlign: 'center',
     marginTop: 20,
+  },
+  logLineSpacing: {
+    marginBottom: 4,
   },
 });
 

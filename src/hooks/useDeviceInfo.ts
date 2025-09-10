@@ -1,11 +1,16 @@
 import { useState, useEffect } from 'react';
 import { Dimensions, Platform } from 'react-native';
-import DeviceInfo from 'react-native-device-info';
+import Cockpit, { type DeviceInfo } from '../NativeCockpit';
+
+type DeviceInfoState = DeviceInfo & {
+  screenWidth: number;
+  screenHeight: number;
+};
 
 const useDeviceInfo = () => {
-  const [info, setInfo] = useState({
+  const [info, setInfo] = useState<DeviceInfoState>({
     platform: Platform.OS,
-    osVersion: Platform.Version,
+    osVersion: String(Platform.Version),
     screenWidth: Dimensions.get('window').width,
     screenHeight: Dimensions.get('window').height,
     appVersion: '',
@@ -20,41 +25,19 @@ const useDeviceInfo = () => {
     timezone: '',
     isEmulator: false,
     isTablet: false,
+    batteryLevel: -1,
+    isCharging: false,
+    totalDiskCapacity: -1,
+    freeDiskStorage: -1,
   });
 
   useEffect(() => {
-    function fetchInfo() {
-      Promise.all([
-        DeviceInfo.getVersion(),
-        DeviceInfo.getBuildNumber(),
-        DeviceInfo.getDeviceName(),
-        DeviceInfo.getSystemName(),
-        DeviceInfo.getSystemVersion(),
-        DeviceInfo.isEmulator(),
-      ]).then(
-        ([
-          appVersion,
-          buildNumber,
-          deviceName,
-          systemName,
-          systemVersion,
-          isEmulator,
-        ]) => {
-          setInfo((prev) => ({
-            ...prev,
-            appVersion,
-            buildNumber,
-            deviceName,
-            systemName,
-            systemVersion,
-            brand: DeviceInfo.getBrand(),
-            model: DeviceInfo.getModel(),
-            deviceId: DeviceInfo.getDeviceId(),
-            isEmulator,
-            isTablet: DeviceInfo.isTablet(),
-          }));
-        }
-      );
+    async function fetchInfo() {
+      const deviceInfo = await Cockpit.getDeviceInfo();
+      setInfo((prev) => ({
+        ...prev,
+        ...deviceInfo,
+      }));
     }
     fetchInfo();
   }, []);

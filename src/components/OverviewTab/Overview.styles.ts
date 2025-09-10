@@ -20,6 +20,7 @@ export const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     marginBottom: 16,
+    marginTop: 16,
     color: '#222',
   },
   infoBlock: {

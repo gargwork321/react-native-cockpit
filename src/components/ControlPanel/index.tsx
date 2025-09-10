@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { View, Text, TouchableOpacity, ScrollView } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 import { styles } from './ControlPanel.styles';
 import OverviewTab from '../OverviewTab';
 import ConsolLogs from '../ConsolLogs';
@@ -38,16 +38,13 @@ export const ControlPanel = () => {
         ))}
       </View>
       {/* Tab Content */}
-      <ScrollView
-        style={styles.tabContent}
-        contentContainerStyle={styles.tabContentContainer}
-      >
+      <View style={styles.tabContent}>
         {activeTab === 0 && <OverviewTab />}
         {activeTab === 1 && <ConsolLogs />}
         {activeTab === 2 && <Text>Coming Soon</Text>}
         {activeTab === 3 && <Text>Coming Soon</Text>}
         {activeTab === 4 && <Text>Coming Soon</Text>}
-      </ScrollView>
+      </View>
     </View>
   );
 };
