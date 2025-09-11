@@ -11,6 +11,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ---
 
+## [0.1.0-alpha.2] - 2025-09-12
+
+### Fixed
+
+- Application carsh for RN version =<0.81.0
+
+---
+
 ## [0.1.0-alpha.1] - 2025-09-11
 
 ### Added
