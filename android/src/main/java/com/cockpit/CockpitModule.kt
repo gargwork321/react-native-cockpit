@@ -70,8 +70,8 @@ class CockpitModule(reactContext: ReactApplicationContext) :
     promise.resolve(map)
   }
 
-  override fun multiply(a: Double, b: Double): Double {
-    return a * b
+  override fun multiply(a: Double, b: Double, promise: Promise) {
+    promise.resolve(a * b)
   }
 
   companion object {

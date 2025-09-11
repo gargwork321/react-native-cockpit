@@ -1831,11 +1831,11 @@ __metadata:
   linkType: hard
 
 "@evilmartians/lefthook@npm:^1.12.3":
-  version: 1.12.4
-  resolution: "@evilmartians/lefthook@npm:1.12.4"
+  version: 1.13.0
+  resolution: "@evilmartians/lefthook@npm:1.13.0"
   bin:
     lefthook: bin/index.js
-  checksum: fffb6bac7701d4fde6c38f59ccc5a0b4cb04173d8506aabaee5823a47d96154d3fe996f46506ef16040fb88626ff0bce46d1dfa7bcb53e14c2a8a13862561500
+  checksum: e5389df7adc2093ae9a3f264d2a5f764d5fdfd4c20079b7de7b5b1778f202064028e7a7c533218c4e029cd3e80b5475cac17fb9d48373a58c2be3b8adc2b44d9
   conditions: (os=darwin | os=linux | os=win32) & (cpu=x64 | cpu=arm64 | cpu=ia32)
   languageName: node
   linkType: hard
@@ -2468,12 +2468,12 @@ __metadata:
   linkType: hard
 
 "@jridgewell/trace-mapping@npm:^0.3.12, @jridgewell/trace-mapping@npm:^0.3.18, @jridgewell/trace-mapping@npm:^0.3.24, @jridgewell/trace-mapping@npm:^0.3.25, @jridgewell/trace-mapping@npm:^0.3.28":
-  version: 0.3.30
-  resolution: "@jridgewell/trace-mapping@npm:0.3.30"
+  version: 0.3.31
+  resolution: "@jridgewell/trace-mapping@npm:0.3.31"
   dependencies:
     "@jridgewell/resolve-uri": ^3.1.0
     "@jridgewell/sourcemap-codec": ^1.4.14
-  checksum: 26edb94faf6f02df346e3657deff9df3f2f083195cbda62a6cf60204d548a0a6134454cbc3af8437392206a89dfb3e72782eaf78f49cbd8924400e55a6575e72
+  checksum: af8fda2431348ad507fbddf8e25f5d08c79ecc94594061ce402cf41bc5aba1a7b3e59bf0fd70a619b35f33983a3f488ceeba8faf56bff784f98bb5394a8b7d47
   languageName: node
   linkType: hard
 
@@ -5522,9 +5522,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.211":
-  version: 1.5.215
-  resolution: "electron-to-chromium@npm:1.5.215"
-  checksum: bb9cc85f51334fa9ae7ba3c2c77739616004c924e9282e955f39d90025ec40994fba9fd8d0128004e23fdfecdbe89cf9e04a1199c11c65c0213b1e090aa8c290
+  version: 1.5.217
+  resolution: "electron-to-chromium@npm:1.5.217"
+  checksum: f66bb1da5e0d46840958beebfd5106d2219b6cbd3efb2f3eb06f616251304df260f8e17371241adee279d4eb38b5e21e3802ca6cd4d12c7bea403a56ff5350e1
   languageName: node
   linkType: hard
 
@@ -10292,8 +10292,8 @@ __metadata:
     turbo: ^2.5.6
     typescript: ^5.9.2
   peerDependencies:
-    react: ">=17.0.0"
-    react-native: ">=0.64.0"
+    react: "*"
+    react-native: "*"
   languageName: unknown
   linkType: soft
 

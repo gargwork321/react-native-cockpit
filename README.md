@@ -15,6 +15,14 @@
   - Intercepts all `console.log`, `warn`, `error`, and `info` messages.
   - Search through logs to find exactly what you need.
 
+## 📝 Version Support Policy
+
+We actively support the following versions:
+
+### React Native 0.74.x - 0.81.x
+
+For older versions (below 0.74.x), limited support is provided, and some features may not work as expected.
+
 ## 📦 Installation
 
 ```bash
@@ -43,6 +51,18 @@ function App() {
 
 export default App;
 ```
+
+## ⚠️ Troubleshooting
+
+If you encounter any issues, please:
+
+1. Checkout [troubleshooting guide](TROUBLESHOOTING.MD)
+2. Check our [existing issues](https://github.com/gargwork321/react-native-cockpit/issues)
+3. Create a new issue with:
+   - React Native version
+   - Error logs
+   - Steps to reproduce
+   - Device/emulator information
 
 ## 🛣️ Roadmap
 
