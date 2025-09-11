@@ -49,8 +49,15 @@ class CockpitModule(reactContext: ReactApplicationContext) :
 
     map.putString("platform", "android")
     map.putString("osVersion", Build.VERSION.RELEASE)
-    map.putString("appVersion", context.packageManager.getPackageInfo(context.packageName, 0).versionName)
-    map.putString("buildNumber", context.packageManager.getPackageInfo(context.packageName, 0).versionCode.toString())
+  val packageInfo = context.packageManager.getPackageInfo(context.packageName, 0)
+  map.putString("appVersion", packageInfo.versionName)
+  val buildNumber = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+    packageInfo.longVersionCode.toString()
+  } else {
+    @Suppress("DEPRECATION")
+    packageInfo.versionCode.toString()
+  }
+  map.putString("buildNumber", buildNumber)
     map.putString("deviceName", Build.MODEL)
     map.putString("systemName", "Android")
     map.putString("systemVersion", Build.VERSION.RELEASE)
