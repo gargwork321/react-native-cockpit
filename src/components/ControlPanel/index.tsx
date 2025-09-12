@@ -3,6 +3,7 @@ import { View, Text, TouchableOpacity } from 'react-native';
 import { styles } from './ControlPanel.styles';
 import OverviewTab from '../OverviewTab';
 import ConsolLogs from '../ConsolLogs';
+import { AsyncStorageTab } from '../AsyncStorageTab';
 
 const TAB_LABELS = ['Overview', 'Logs', 'Flags', 'State', 'Tools'];
 
@@ -41,11 +42,7 @@ export const ControlPanel = () => {
       <View style={styles.tabContent}>
         {activeTab === 0 && <OverviewTab />}
         {activeTab === 1 && <ConsolLogs />}
-        {activeTab === 2 && (
-          <View style={styles.comingSoonView}>
-            <Text>Coming Soon</Text>
-          </View>
-        )}
+        {activeTab === 2 && <AsyncStorageTab />}
         {activeTab === 3 && (
           <View style={styles.comingSoonView}>
             <Text>Coming Soon</Text>
